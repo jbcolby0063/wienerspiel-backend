@@ -9,7 +9,7 @@ import os
 from dotenv import load_dotenv
 from pathlib import Path
 
-dotenv_path = Path('../.env.local')
+dotenv_path = Path('.env.local')
 load_dotenv(dotenv_path=dotenv_path)
 
 #only allows for one image post or 1 video post!
