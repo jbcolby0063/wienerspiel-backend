@@ -3,7 +3,7 @@ import pyshorteners
 import requests
 import os
 import time
-from PIL import Image
+# from PIL import Image
 from firebase import firebase
 import requests
 import io

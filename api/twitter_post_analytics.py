@@ -3,7 +3,7 @@ import requests
 import json
 from requests_oauthlib import OAuth1
 from firebase import firebase
-from PIL import Image
+# from PIL import Image
 import requests
 import io
 import time
