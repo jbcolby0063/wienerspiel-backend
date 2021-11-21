@@ -1,0 +1,21 @@
+2021-06-03 12:55:22,094 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-06-03 12:55:22,094 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Users/bhargav/Wienerspiel-project/react-flask-app/api/venv/lib/python3.8/site-packages/instabot/bot/bot.py
+2021-06-03 12:55:22,095 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2021-06-03 12:55:22,095 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-06-03 12:55:22,095 - instabot version: 0.117.0 (api_login) - INFO - Recovery from /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=8dbdb3fa-fba8-4f16-953d-7662d41d02b1
+- uuid=aa25bad7-d3f7-4062-a387-cce6c1056a6b
+- client_session_id=2b21e778-a5e8-4652-96a8-9d19705b413d
+- device_id=android-a0f3290450d39b40
+2021-06-03 12:55:22,095 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2021-06-03 12:55:23,447 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2021-06-03 12:55:23,723 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2021-06-03 12:55:23,724 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'dscaccount'!
+2021-06-03 12:55:23,724 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount.checkpoint
+2021-06-03 12:55:25,991 - instabot version: 0.117.0 (bot_video) - INFO - Started uploading 'ig_publish_content_vid.mp4'
+2021-06-03 12:55:57,342 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: media/configure/?video=1 returned response: <Response [200]>
+2021-06-03 12:55:57,502 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: qe/expose/ returned response: <Response [200]>
+2021-06-03 12:55:57,505 - instabot version: 0.117.0 (bot_video) - INFO - Video 'ig_publish_content_vid.mp4' uploaded
+2021-06-03 12:55:57,506 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount.checkpoint
+2021-06-03 12:55:57,507 - instabot version: 0.117.0 (bot) - INFO - Total requests: 35

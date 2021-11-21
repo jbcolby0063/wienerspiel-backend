@@ -1,0 +1,26 @@
+2021-06-03 12:49:53,998 - instabot version: 0.117.0 (bot) - INFO - Instabot version: 0.117.0 Started
+2021-06-03 12:49:53,998 - instabot version: 0.117.0 (bot) - DEBUG - Bot imported from /Users/bhargav/Wienerspiel-project/react-flask-app/api/venv/lib/python3.8/site-packages/instabot/bot/bot.py
+2021-06-03 12:49:53,999 - instabot version: 0.117.0 (api_login) - DEBUG - Loading cookies
+2021-06-03 12:49:53,999 - instabot version: 0.117.0 (api_login) - DEBUG - Loading uuids
+2021-06-03 12:49:53,999 - instabot version: 0.117.0 (api_login) - INFO - Recovery from /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount_uuid_and_cookie.json: COOKIE True - UUIDs True - TIMING, DEVICE and ...
+- user-agent=Instagram 117.0.0.28.123 Android (28/9.0; 420dpi; 1080x1920; OnePlus; ONEPLUS A3003; OnePlus3; qcom; en_US; 180322800)
+- phone_id=8dbdb3fa-fba8-4f16-953d-7662d41d02b1
+- uuid=aa25bad7-d3f7-4062-a387-cce6c1056a6b
+- client_session_id=c53c4018-8cc1-42a5-8ee5-1b9e7533adc0
+- device_id=android-a0f3290450d39b40
+2021-06-03 12:49:53,999 - instabot version: 0.117.0 (api_login) - INFO - LOGIN FLOW! Just logged-in: False
+2021-06-03 12:49:55,551 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/timeline/ returned response: <Response [200]>
+2021-06-03 12:49:55,959 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: feed/reels_tray/ returned response: <Response [200]>
+2021-06-03 12:49:56,250 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2021-06-03 12:49:56,420 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/ranked_recipients/ returned response: <Response [200]>
+2021-06-03 12:49:57,191 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: direct_v2/inbox/ returned response: <Response [200]>
+2021-06-03 12:49:57,446 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: direct_v2/get_presence/ returned response: <Response [200]>
+2021-06-03 12:49:58,008 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: news/inbox/?limited_activity=true&show_su=true returned response: <Response [200]>
+2021-06-03 12:49:58,189 - instabot version: 0.117.0 (api) - DEBUG - GET to endpoint: users/profile_notice/ returned response: <Response [200]>
+2021-06-03 12:49:59,442 - instabot version: 0.117.0 (api) - DEBUG - POST to endpoint: discover/explore/ returned response: <Response [200]>
+2021-06-03 12:49:59,446 - instabot version: 0.117.0 (api) - INFO - Logged-in successfully as 'dscaccount'!
+2021-06-03 12:49:59,446 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Loading Checkpoint file from: /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount.checkpoint
+2021-06-03 12:50:00,885 - instabot version: 0.117.0 (api_photo) - ERROR - Photo does not have a compatible photo aspect ratio.
+2021-06-03 12:50:00,885 - instabot version: 0.117.0 (bot_photo) - INFO - Photo 'pexels-linda-ellershein-1749900.jpeg' is not uploaded.
+2021-06-03 12:50:00,885 - instabot version: 0.117.0 (bot_checkpoint) - DEBUG - Saving Checkpoint file to: /Users/bhargav/Wienerspiel-project/react-flask-app/post-features/config/dscaccount.checkpoint
+2021-06-03 12:50:00,886 - instabot version: 0.117.0 (bot) - INFO - Total requests: 31
