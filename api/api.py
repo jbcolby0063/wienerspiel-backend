@@ -8,9 +8,10 @@ import insta_post
 from datetime import datetime
 import schedule
 import time
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 '''
 Integration of Posting Feature
