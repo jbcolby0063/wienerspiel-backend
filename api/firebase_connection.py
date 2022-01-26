@@ -29,9 +29,10 @@ def get_media_url(uploadTimeID, media_files):
     "apiKey": os.getenv('REACT_APP_FIREBASE_API_KEY'),
     "authDomain": os.getenv('REACT_APP_FIREBASE_AUTH_DOMAIN'),
     "databaseURL": os.getenv('REACT_APP_FIREBASE_DATABASE_URL'),
-    "storageBucket": os.getenv('REACT_APP_FIREBASE_STORAGE_BUCKET'),
-    "serviceAccount": "../src/serviceAccountKey.json"
+    "storageBucket": os.getenv('REACT_APP_FIREBASE_STORAGE_BUCKET')
     }
+    if(os.getenv("IS_APPENGINE") != 'true'):
+        config['serviceAccount'] = './serviceAccountKey.json'
     firebase_connection = pyrebase.initialize_app(config)
     storage = firebase_connection.storage()
     urls_media_files = []

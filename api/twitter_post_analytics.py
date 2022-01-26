@@ -34,7 +34,7 @@ class twitter_post:
         self.post_title = post_title
         self.media_id = None #list of all the media ids
         self.post_status_id = None
-        self.media_type = media_type
+        self.media_type = media_type 
   
     def media_file_list(self, media_list):
         if(len(media_list) >= 1):
@@ -58,7 +58,7 @@ class twitter_post:
                 
             else: 
                 file_name = media_names[index]
-                media_category = 'TweetVideo'
+                media_category = 'tweet_video'
                 res = requests.get(x)
                 media = io.BytesIO(res.content)
                 ftype = io.BufferedReader(media)
