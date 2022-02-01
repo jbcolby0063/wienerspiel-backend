@@ -65,6 +65,15 @@ def publish_to_platform():
     timeid = post_information['uploadTimeID']
     list_media = post_information['fileName']
     media_files = get_media_url(timeid, list_media)
+    if('twitterCheck' in social_media_list):
+        twitter_post_object = twitter_post_analytics.twitter_post(post_description, post_title, media_type)
+        if(twitter_post_object.media_type != None):
+            twitter_post_object.media_file_list(media_files) #"media_files" must be in list format!
+            twitter_post_object.tweet_post_media(list_media)
+            firebase_connection.put('/users/' + firebase_table_id, 'Twitter_post_id', str(twitter_post_object.post_status_id))
+        else:
+            twitter_post_object.tweet_post_nomedia()
+            firebase_connection.put('/users/' + firebase_table_id, 'Twitter_post_id', str(twitter_post_object.post_status_id))
     if('facebookCheck' in social_media_list):
         facebook_post_object = fb_post_analytics.fb_post(post_title, post_description, media_type)
         if(facebook_post_object.media_type == 'video'):
@@ -76,15 +85,6 @@ def publish_to_platform():
         else:
             facebook_post_object.post_no_media()
             firebase_connection.put('/users/' + firebase_table_id, 'Facebook_post_id', str(facebook_post_object.post_id))
-    if('twitterCheck' in social_media_list):
-        twitter_post_object = twitter_post_analytics.twitter_post(post_description, post_title, media_type)
-        if(twitter_post_object.media_type != None):
-            twitter_post_object.media_file_list(media_files) #"media_files" must be in list format!
-            twitter_post_object.tweet_post_media(list_media)
-            firebase_connection.put('/users/' + firebase_table_id, 'Twitter_post_id', str(twitter_post_object.post_status_id))
-        else:
-            twitter_post_object.tweet_post_nomedia()
-            firebase_connection.put('/users/' + firebase_table_id, 'Twitter_post_id', str(twitter_post_object.post_status_id))
     if('instagramCheck' in social_media_list):
         instagram_post_object = insta_post.insta_post(post_title, post_description, media_type)
         instagram_post_object.get_media_ids(media_files) #media files must be file path
